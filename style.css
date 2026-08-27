@@ -1,0 +1,220 @@
+/* =========================
+   General
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  line-height: 1.65;
+  color: #222;
+  background: #fff;
+}
+
+.container {
+  width: min(90%, 820px);
+  margin: 50px auto;
+}
+
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+  color: #235a97;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+
+  margin-bottom: 42px;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile h1 {
+  margin: 0 0 8px;
+
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.profile p {
+  margin: 7px 0;
+}
+
+.position {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.profile-photo {
+  width: 165px;
+  height: 205px;
+
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.links {
+  margin-top: 15px !important;
+}
+
+.links span {
+  margin: 0 5px;
+  color: #888;
+}
+
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+  margin-top: 38px;
+}
+
+h2 {
+  margin: 0 0 18px;
+
+  padding-bottom: 5px;
+
+  font-size: 1.35rem;
+  font-weight: 600;
+
+  border-bottom: 1px solid #d8d8d8;
+}
+
+h3 {
+  margin: 25px 0 9px;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 8px 0;
+}
+
+
+/* =========================
+   Entries
+   ========================= */
+
+.entry {
+  margin: 16px 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.entry p {
+  margin: 2px 0;
+  color: #555;
+}
+
+
+/* =========================
+   Lists
+   ========================= */
+
+.publication-list {
+  padding-left: 24px;
+}
+
+.publication-list li {
+  margin-bottom: 14px;
+  padding-left: 3px;
+}
+
+.simple-list {
+  padding-left: 20px;
+}
+
+.simple-list li {
+  margin: 6px 0;
+}
+
+
+/* =========================
+   Footer / Album
+   ========================= */
+
+footer {
+  margin-top: 50px;
+  padding-top: 15px;
+
+  border-top: 1px solid #ddd;
+
+  font-size: 0.9rem;
+}
+
+.updated {
+  margin-top: 8px;
+  color: #888;
+  font-size: 0.82rem;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 88%;
+    margin: 30px auto;
+  }
+
+  .profile {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .profile-photo {
+    width: 135px;
+    height: 170px;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    gap: 0;
+  }
+
+}
